@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabañas de Cartagena | Alegría, Usulután</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Cartagena <span>Alegría</span></div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#cabanas">Cabañas</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#reserva">Reservar</a></li>
+        </ul>
+    </nav>
+
+  <header id="inicio" class="hero-container">
+    <div class="hero-card-wrapper">
+        <div class="hero-image-card"></div>
+    </div>
+    <div class="hero-text-content">
+        <h1>Descansa en las nubes</h1>
+        <p>Vive la experiencia mágica de Alegría, Usulután, en la armonía de nuestras cabañas.</p>
+        <a href="#reserva" class="btn-reserva-link">Reservar Ahora</a>
+    </div>
+</header>
+
+    <section id="cabanas" class="section">
+        <h2 class="title">Nuestras Cabañas</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img" style="background-image: url(visualizacion/cabaña_standar.png);"></div>
+                <div class="card-info">
+                    <h3>Cabaña Estándar</h3>
+                    <p>Ideal para parejas. Vista al jardín y clima de montaña.</p>
+                    <span class="price">$55.00 / Noche</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url(visualizacion/cabaña_familiar.jpg);"></div>
+                <div class="card-info">
+                    <h3>Cabaña Familiar</h3>
+                    <p>Espacio para 4 personas con chimenea privada y terraza.</p>
+                    <span class="price">$85.00 / Noche</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="servicios" class="section">
+    <h2 class="title">Servicios y Experiencias</h2>
+    <div class="grid">
+        
+        <div class="card">
+        <div class="card-img    " style="background-image: url(visualizacion/sopa-de-gallina-india.png);"></div>
+            <div class="card-info">
+                <h3>Restaurante Típico</h3>
+                <p>Degusta lo mejor de Alegría: Tamales de Elote, pupusas con café y platos fuertes como Gallina india, parrilladas con vista al volcán.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img" style="background-image: url(visualizacion/eventos.png);"></div>
+            <div class="card-info">
+                <h3>Eventos Especiales</h3>
+                <p>Nuestros jardines y clima fresco son el escenario ideal para bodas, retiros o convivios familiares.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img" style="background-image: url(visualizacion/Limpieza_confort.png);"></div>
+            <div class="card-info">
+                <h3>Limpieza y Confort</h3>
+                <p>Servicio de habitación diario con protocolos de higiene rigurosos para un descanso seguro.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="reserva" class="booking">
+        <div class="form-container">
+            <h2>Solicitar Reservación</h2>
+            <form id="reservaForm">
+                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+                <div class="form-row">
+                    <input type="date" id="fechaIn" required>
+                    <input type="date" id="fechaOut" required>
+                </div>
+                <select id="tipoCabana">
+                    <option value="estandar">Cabaña Estándar</option>
+                    <option value="familiar">Cabaña Familiar</option>
+                </select>
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+            <div id="mensajeExito" class="hidden">¡Gracias! Nos contactaremos pronto.</div>
+        </div>
+    </section>
+
+ <footer class="footer-container">
+    <div class="footer-card">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🏡 Cartagena <span>Alegría</span></h4>
+                <p>Un refugio de paz en las montañas de Usulután. Vive la experiencia del Pueblo Vivo. ✨</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>📍 Contacto</h4>
+                <p>Ubicación: Alegría, Usulután, El Salvador. 🇸🇻</p>
+                <p>📞 WhatsApp: +503 7000-0000</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>📱 Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#">Facebook 👍</a>
+                    <a href="#">Instagram 📸</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cabañas de Cartagena - Pueblo Vivo 🌿</p>
+        </div>
+    </div>
+</footer>
+</script>
+</html>

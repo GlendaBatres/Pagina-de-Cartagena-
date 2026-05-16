@@ -1,0 +1,237 @@
+:root {
+    --verde-bosque: #2d4635;
+    --verde-claro: #a3b18a;
+    --madera: #bc6c25;
+    --crema: #fefae0;
+    --blanco-niebla: #f8f9fa;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--blanco-niebla);
+    color: var(--verde-bosque);
+    scroll-behavior: smooth;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: white;
+    position: sticky;
+    top: 0; z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo { font-family: 'Playfair Display'; font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--madera); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { text-decoration: none; color: var(--verde-bosque); font-weight: 500; }
+
+/* Contenedor principal */
+.hero-container {
+    padding: 40px 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* El contenedor de la tarjeta */
+.hero-card-wrapper {
+    max-width: 900px; /* Controla qué tan ancha es la foto */
+    margin: 0 auto 30px auto;
+    padding: 0 15px;
+}
+
+/* La tarjeta de imagen con el mismo efecto que las cabañas */
+.hero-image-card {
+    height: 400px; /* Controla la altura de la foto principal */
+    background-image: url('visualizacion/Portada.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2); /* Sombra elegante */
+}
+
+/* Texto debajo de la imagen */
+.hero-text-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #2d4635;
+    margin-bottom: 10px;
+}
+
+.hero-text-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-reserva-link {
+    color: #bc6c25;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-reserva-link:hover {
+    color: #2d4635;
+}
+.card-img {
+    height: 220px;
+    background-size: cover;    /* Esto hace que la imagen llene el espacio */
+    background-position: center; /* Esto centra la imagen para que no se corte lo importante */
+    background-repeat: no-repeat;
+    width: 100%;
+}
+/* Tarjetas */
+.section { padding: 80px 10%; }
+.title { text-align: center; margin-bottom: 40px; font-family: 'Playfair Display'; font-size: 2.5rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+.card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.card-img { height: 200px; background-size: cover; }
+.card-info { padding: 20px; }
+.price { display: block; margin-top: 10px; font-weight: bold; color: var(--madera); }
+
+
+
+/* Sección de Reservación con armonía natural */
+.booking {
+    background-color: #f9fbf9; /* Un blanco con un toque mínimo de verde */
+    padding: 80px 10%;
+    border-top: 1px solid #eee;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05); /* Sombra suave para que flote */
+}
+
+.form-container h2 {
+    color: var(--verde-bosque);
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--madera); /* Resalta con el color madera al escribir */
+}
+
+.btn-submit {
+    background-color: var(--madera); /* Botón elegante en verde */
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--madera); /* Cambia a madera al pasar el mouse */
+}
+
+/* Contenedor principal para dar espacio */
+.footer-container {
+    padding: 40px 10%;
+    background-color: #ffffff; /* Fondo de la página blanco */
+}
+
+/* La tarjeta flotante verde suave */
+.footer-card {
+    background-color: #a3b18a; /* Color Verde Salvia Suave */
+    color: #2d4635; /* Texto verde oscuro para que se lea bien */
+    padding: 40px;
+    border-radius: 30px; /* Bordes muy redondeados como tus imágenes */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+/* Organización de las columnas */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    text-align: center; /* Justificado al centro */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #442c1e; /* Café madera suave para los títulos */
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Botones de Redes Sociales */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #2d4635;
+    background: rgba(255, 255, 255, 0.3); /* Fondo traslúcido */
+    padding: 8px 20px;
+    border-radius: 15px;
+    width: 180px;
+    transition: 0.3s;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.social-links a:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Línea final */
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
